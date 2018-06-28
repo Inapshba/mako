@@ -123,9 +123,9 @@
           }
           q = u = 0.5 * f;
           r = v = 0.5 * p;
-          document.onmousedown = F;
-          document.onmouseup = G;
-          document.onmousemove = E;
+          document.ontouchstart = F;
+          document.ontouched = G;
+          document.ontouchmove = E;
           setInterval(C, 33);
         } else document.getElementById("output").innerHTML = "Sorry, needs a recent version of Chrome, Firefox, Opera, Safari, or Internet Explorer 9."
       }
