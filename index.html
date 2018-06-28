@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Touch</title>
+  <title>Test of ecs</title>
   <meta name="generator" content="Microsoft front page 4.0" charset="utf-8" />
   <!-- тег meta хранит информацию предназначенную для браузера -->
   <!-- атрибут 'name' хранит идентификатор метатега -->
@@ -101,9 +101,9 @@
         this.size = 1
       }
       var D = 2 * Math.PI,
-        f = 1330,
-        p = 690,
-        z = 1000,
+        f = 800,
+        p = 800,
+        z = 500,
         B = 0.96,
         A = [],
         o, e, n, m, q, r, x, y, u, v, w;
@@ -123,9 +123,6 @@
           }
           q = u = 0.5 * f;
           r = v = 0.5 * p;
-          document.ontouchstart = F;
-          document.ontouchend = G;
-          document.ontouchmove = E;
           document.onmousedown = F;
           document.onmouseup = G;
           document.onmousemove = E;
@@ -144,7 +141,7 @@
   <p>
     <div id="outer">
       <div id="canvasContainer">
-        <canvas id="mainCanvas" width="1330" height="690"></canvas>
+        <canvas id="mainCanvas" width="800" height="800"  class="hiround"></canvas>
       </div>
     </div>
   </p>
