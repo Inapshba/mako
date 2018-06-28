@@ -22,73 +22,6 @@
       box-shadow: 0 0 14px #666;
     }
 
-    .attantion {
-      color: red;
-      border: 1px solid red;
-      border-radius: 7px;
-      padding: 5px;
-    }
-
-    aside {
-      padding: 5px;
-      font-size: 32px;
-      width: 250px;
-      height: 100px;
-      background: #f0f0f0;
-      /* запрет выделения */
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-    }
-
-    th {
-      font-family: monospace;
-      padding: 5px;
-    }
-
-    blockquote {
-      background: orange;
-      width: 450px;
-      font-size: 26px;
-      height: 90px;
-      text-align: center;
-      padding: 5px;
-      /* запрет выделения  */
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-    }
-
-    blockquote>p,
-    aside>p {
-      margin-top: 0px;
-      margin-left: 0px;
-      padding: 10px;
-      text-align: center;
-    }
-
-    marquee {
-      font-size: 24px;
-      /* запрет выделения */
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-    }
-
-    footer {
-      color: gray;
-      /* запрет выделения */
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-    }
-
-    time {
-      /* запрет выделения */
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-    }
   </style>
 
 
@@ -169,9 +102,9 @@
         this.size = 1
       }
       var D = 2 * Math.PI,
-        f = 200,
-        p = 200,
-        z = 1000,
+        f = 500,
+        p = 500,
+        z = 1500,
         B = 0.96,
         A = [],
         o, e, n, m, q, r, x, y, u, v, w;
@@ -207,191 +140,12 @@
 
   <!-- Анимированный канвас хихихихи-->
   <p>
-    Анимированный холст<br>
     <div id="outer">
       <div id="canvasContainer">
-        <canvas id="mainCanvas" width="200" height="200" class="hiround"></canvas>
+        <canvas id="mainCanvas" width="500" height="500" class="hiround"></canvas>
       </div>
     </div>
   </p>
-
-  <!-- Тег <hgroup> предназначен для группировки заголовков различных уровей  -->
-  <hgroup>
-    <h1>Экзамен</h1>
-    <h2>Практические задачи</h2>
-    <h3>Рассматривание тегов</h3>
-  </hgroup>
-
-
-
-  <!-- тег эсайд -->
-  <aside class="round">
-    <p>
-      Текст в теге &ltaside&gt
-    </p>
-  </aside>
-  <hr>
-
-  <!-- тег марки (бегущая строка) -->
-  <marquee width="300px;" scrollamount="10">
-    <p>Текст для бегущей строки &ltmarquee&gt</p>
-  </marquee>
-  <hr>
-
-  <!-- Тег цитаты (внутристрочной) -->
-  <p>
-    Внутристрочная цитата &ltquote&gt:<br/> Как говорил Марк Аврелий
-    <quote>"Я лишь человек"</quote>.
-  </p>
-  <hr>
-
-  <!-- Тег цитаты (блочной) -->
-  <p>
-    Блочная цитата &ltblockquote&gt: <br>
-    <blockquote class="round">
-      <p>
-        "Все хотят править миром, и у каждого он есть".
-      </p>
-    </blockquote>
-  </p>
-  <hr>
-
-  <!-- Тег кэпшион -->
-  <table border="1">
-    <caption style="caption-side: bottom; font-size: 12px;">Подпись к таблице &ltcaption&gt</caption>
-    <tr>
-      <th>Ячейка таблицы 11</th>
-      <th>Ячейка таблицы 12</th>
-    </tr>
-    <tr>
-      <th>Ячейка таблицы 21</th>
-      <th>Ячейка таблицы 22</th>
-    </tr>
-  </table>
-  <hr>
-
-  <!-- Тег тайм -->
-  <p>
-    <time>18.06.2018</time> - дата первого экзамена<br>
-    <time>22.06.2018</time> - дата второго экзамена<br>
-    <time>25.06.2018</time> - дата третьего экзамена<br>
-    <time>27.06.2018</time> - дата четвертого экзамена<br>
-    <time>30.06.2018</time> - дата пятого экзамена<br>
-  </p>
-  <hr>
-
-  <!-- Тег страйк -->
-  <p>
-    <strike>Перечёркнутый текст</strike> - тег &ltstrike&gt.
-  </p>
-  <hr>
-
-  <!-- Тег спен -->
-  <p style="font-size: 24px;">
-    Тег &ltspan&gt используются для выделения <span class="attantion">области</span> информации.
-  </p>
-  <hr>
-
-  <!-- Тег ссап (подстрочник и надстрочник) -->
-  <p>
-    Используем тег &ltsup&gt для надстрочных символов. Пример: E = MC<sup>2</sup><br> Используем тег &ltsub&gt для подстрочных символов. Пример: P<sub>k</sub> = 1 - k<br>
-  </p>
-  <hr>
-
-  <!-- Примеры испольщования заголовков -->
-  <h1>Заголовок 1-ого уровня</h1>
-  <h2>Заголовок 2-ого уровня</h2>
-  <h3>Заголовок 3-ого уровня</h3>
-  <h4>Заголовок 4-ого уровня</h4>
-  <h5>Заголовок 5-ого уровня</h5>
-  <h6>Заголовок 6-ого уровня</h6>
-  <hr>
-
-
-  <!-- Примеры использования списков (нумерованных и маркированных) -->
-  <p>
-    Списки:<br>
-    <ol>
-      <li>Пункт списка</li>
-      <li>Пункт списка</li>
-      <li>Пункт списка</li>
-    </ol>
-
-    <ul>
-      <li>Пункт списка</li>
-      <li>Пункт списка
-        <ul>
-          <li>Подпункт списка</li>
-          <li>Подпункт списка</li>
-        </ul>
-      </li>
-      <li>Пункт списка</li>
-    </ul>
-  </p>
-  <hr>
-
-  <!-- Оформление кода -->
-  <p>
-    Оформление кода внесенного в тег &ltcode&gt<br><br>
-    <code>
-   int old = 100; <br>
-   santimetr sm = 25.00;<br>
-   for(int i = 0; i<=old; i++){<br>
-    sosi.hui(i+100);<br>
-    if(sosi.HUI>sm) break;<br>
-   }<br>
-  </code>
-  </p>
-  <hr>
-
-  <!-- Тег аббревиатура и акроним-->
-  <p>
-    Аббревиатура и акроним:<br> Ученные вывели новый тип человеческой особи
-    <abbr style="font-size: 20px;" title="Самый Охуевший Чел На Свете">СОЧНВ</abbr> конкретных данных о характеристиках таких особей у нас нет.<br> По первым сведениям все подобные особи являются сотрудниками <acronym style="font-size: 20px" title="Государственная Автомобтльная Инспекция">ГАИ</acronym><br>
-  </p>
-  <hr>
-
-  <!-- C помощью тега <area> мы можем накинуть несколько ссылок на одну картинку  -->
-  <!-- То есть при нажатии на различные области изображение нас кидает в разные места и это иногда бывает удобным для навигации -->
-  <!-- области со ссылками указываем в теге <map> -->
-  <!-- координаты областей моно определить с помощью специальных программ или онлайн сервисов -->
-  <p>
-    <img class="round" src="https://image.freepik.com/free-psd/no-translate-detected_29-20000169.jpg" alt="Навигация по сайту" usemap="#Navigation">
-    <p><map name="Navigation">
-  <area shape="rect" coords="100,119,164,151" title="Переход на домашнюю страницу" href="home.html" alt="Home">
-  <area shape="rect" coords="174,121,236,151" title="О нашем сайте" href="about.html" alt="About">
-  <area shape="rect" coords="249,117,346,152" title="Посмотреть портфолио" href="portfolio.html" alt="Portfolio">
-  <area shape="rect" coords="360,118,441,151" title="Открыть сервисы" href="services.html" alt="Services">
-  <area shape="rect" coords="453,118,530,152" title="Посмотреть контактную информацию" href="contact.html" alt="Contact">
-  </map></p>
-  </p>
-  <hr>
-
-  <!-- Тег dfn -->
-  <p>
-    Тег &ltdfn&gt<br> Этот тег используют для выделения <dfn>новых терминов</dfn>.
-  </p>
-  <hr>
-
-  <!-- Адресная информация в теге <address> -->
-  <address>
-   Адресная информация:<br>
-   Иванов Ахмед Иванович<br>
-   Номер телефона +7999 999 99 99<br>
-  </address>
-  <hr>
-
-  <p>Текущее время:
-    <applet code="code.class" width="60" height="10">
-      Ваш браузер не поддерживает Java-апплеты.
-    </applet>
-  </p>
-
-  <!-- Тег футер -->
-  <footer>
-    Copyright Инапшба Шаур <sub>(футер - footer)</sub>
-  </footer>
-
 
 
 </body>
