@@ -21,6 +21,9 @@
       border-radius: 500px;
       box-shadow: 0 0 14px #666;
     }
+
+
+
   </style>
 
 
@@ -30,7 +33,7 @@
     (function() {
       function C() {
         e.globalCompositeOperation = "source-over";
-        e.fillStyle = "rgba(8,8,12,0.65)";
+        e.fillStyle = "rgb(0, 2, 38)";
         e.fillRect(0, 0, f, p);
         e.globalCompositeOperation = "lighter";
         x = q - u;
@@ -101,9 +104,9 @@
         this.size = 1
       }
       var D = 2 * Math.PI,
-        f = 800,
-        p = 800,
-        z = 500,
+        f = 680,
+        p = 680,
+        z = 1200,
         B = 0.96,
         A = [],
         o, e, n, m, q, r, x, y, u, v, w;
@@ -123,9 +126,9 @@
           }
           q = u = 0.5 * f;
           r = v = 0.5 * p;
-          document.ontouchstart = F;
-          document.ontouched = G;
-          document.ontouchmove = E;
+          document.onmousedown = F;
+          document.onmouseup = G;
+          document.onmousemove = E;
           setInterval(C, 33);
         } else document.getElementById("output").innerHTML = "Sorry, needs a recent version of Chrome, Firefox, Opera, Safari, or Internet Explorer 9."
       }
@@ -133,7 +136,7 @@
   </script>
 </head>
 
-<body style="font-family: Century Gothic">
+<body style="font-family: Century Gothic; ">
 
   <!-- &lt &gt - специальные имена для символов скобок тега <тег> -->
 
@@ -141,7 +144,7 @@
   <p>
     <div id="outer">
       <div id="canvasContainer">
-        <canvas id="mainCanvas" width="800" height="800"  class="hiround"></canvas>
+        <canvas id="mainCanvas" width="680" height="680" class="hiround"></canvas>
       </div>
     </div>
   </p>
