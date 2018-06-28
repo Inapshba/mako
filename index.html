@@ -123,9 +123,10 @@
             }
             q = u = 0.5 * f;
             r = v = 0.5 * p;
-            document.ontouchstart = F;
+            document.ontouchstart =
+              F;
             document.ontouchend = G;
-            document.ontouchmove = E;
+            document.onmousemove = E;
             setInterval(C, 33);
           } else document.getElementById("output").innerHTML = "Sorry, needs a recent version of Chrome, Firefox, Opera, Safari, or Internet Explorer 9."
         }
@@ -150,4 +151,3 @@
 </body>
 
 </html>
-
